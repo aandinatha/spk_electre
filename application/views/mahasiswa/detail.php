@@ -103,6 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="ml-4">
                                     <div class="ml-5">
                                         <div class="row" class="ml-5">
@@ -120,7 +121,7 @@
                                     </div>
                                 </div>
                                 <div align=center class="mt-3">
-                                    <a class="btn btn-info" href="<?php echo base_url('Mahasiswa'); ?>">kembali</a>
+                                    <a class="btn btn-info" href="<?php echo base_url('Mahasiswa'); ?>">back</a>
                                 </div>
 
                                 <!--  <button class="btn btn-light">Cancel</button> -->
