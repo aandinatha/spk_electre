@@ -28,7 +28,7 @@ class Kriteria extends CI_Controller
 
     public function createKriteria()
     {
-        $data['title'] = 'Create Kriteria';
+        $data['title'] = 'Data Kriteria';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 
@@ -59,7 +59,7 @@ class Kriteria extends CI_Controller
 
     public function updateKriteria($id)
     {
-        $data['title'] = 'Update Kriteria';
+        $data['title'] = 'Data Kriteria';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 

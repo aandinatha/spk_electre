@@ -26,11 +26,11 @@
                                         <div class="col-sm-4">
                                             <select class="form-control form-control" placeholder="Masukan Nilai" name="ID-<?= $row->id_kriteria ?>">
                                                 <option value="<?php echo $row->nilai; ?>"><?php echo $row->nilai; ?></option>
-                                                <option value="1">Sangat Kurang Baik</option>
-                                                <option value="2">Kurang Baik </option>
-                                                <option value="3">Cukup baik</option>
-                                                <option value="4">Baik</option>
-                                                <option value="5">Sangat Baik</option>
+                                                <option value="1">1. Sangat Kurang Baik</option>
+                                                <option value="2">2. Kurang Baik </option>
+                                                <option value="3">3. Cukup baik</option>
+                                                <option value="4">4. Baik</option>
+                                                <option value="5">5. Sangat Baik</option>
                                             </select>
                                         </div>
                                     <?php endforeach ?>
@@ -47,6 +47,55 @@
             </div>
         </div>
     </div>
+    <!-- Custom template | don't include it in your project! -->
+    <div class="custom-template">
+            <div class="title">Keterangan</div>
+            <div class="custom-content">
+                <div class="switcher">
+                    <div class="switch-block">
+                        <table class="display table table-striped table-hover" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Kode</th>
+                                <th>Keterangan</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sangat Kurang Baik</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Kurang Baik </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cukup baik</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Baik</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Sangat Baik</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <div class="col-8 col-md-4">
+                            <div class="nav flex-column nav-pills nav-secondary nav-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
+
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="custom-toggle">
+                    <i class="flaticon-settings"></i>
+                </div>
+            </div>
+       
+
+        </div>
+             <!-- End Custom template -->
 
 </div>
 <!-- /.container-fluid -->

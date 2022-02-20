@@ -77,7 +77,7 @@ class Mahasiswa_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->id = uniqid();
+        //$this->id = uniqid();
         $this->nama = $post["nama"];
         $this->email = $post["email"];
         $this->nim = $post["nim"];

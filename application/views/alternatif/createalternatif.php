@@ -86,11 +86,11 @@
                                         <div class="col-sm-7">
                                             <select class="form-control form-control" placeholder="Masukan Nilai" name="ID-<?= $row->id_kriteria ?>">
                                                 <option value="">Masukan Nilai</option>
-                                                <option value="1">Sangat Kurang Baik</option>
-                                                <option value="2">Kurang Baik </option>
-                                                <option value="3">Cukup baik</option>
-                                                <option value="4">Baik</option>
-                                                <option value="5">Sangat Baik</option>
+                                                <option value="1">1. Sangat Kurang Baik</option>
+                                                <option value="2">2. Kurang Baik </option>
+                                                <option value="3">3. Cukup baik</option>
+                                                <option value="4">4. Baik</option>
+                                                <option value="5">5. Sangat Baik</option>
 
                                             </select>
                                         </div>
@@ -100,7 +100,9 @@
                                 <div class="box-footer">
                                     <button type="submit" class="btn btn-primary " name="createalternatif" value="createalternatif">Simpan
                                         Data</button>
-                                    <button type="submit" class="btn btn-warning " name="back" value="back">Kembali</button>
+                                        <a class="btn btn-warning" href="<?php echo base_url('nilai'); ?>">Kembali</a>
+                                        
+                                    <!-- <button class="btn btn-warning ">Kembali</button> -->
                                 </div>
                             </form>
                         </div>

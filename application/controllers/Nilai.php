@@ -36,7 +36,7 @@ class Nilai extends CI_Controller
 
     public function updateNilai($id)
     {
-        $data['title'] = 'Data Kriteria';
+        $data['title'] = 'Data Nilai';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 

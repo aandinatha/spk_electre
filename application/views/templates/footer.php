@@ -197,6 +197,67 @@
 </script>
 
 
+<script>
+    $(document).ready(function() {
+        $('#kriteria').DataTable({
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [3, 4]
+            }]
+        });
+
+        $('#alternatif').DataTable({
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [2, 3]
+            }]
+        });
+
+        $('#nilai').DataTable({
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [2, 3, 4, 5, 6, 7, 8]
+            }]
+        });
+
+        $('#listuser').DataTable({
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [3, 4]
+            }]
+        });
+
+        $("table[id^='base']").DataTable({
+            "ordering": false,
+            "paging": false,
+            language: {
+                searchPlaceholder: "Cari Data"
+            }
+
+
+        });
+
+        $("table[id^='table']").DataTable({
+            "scrollX": true,
+            "ordering": false,
+            "paging": false
+        });
+
+        $('#rank').DataTable({
+            "order": [
+                [1, "asc"]
+            ],
+            "lengthMenu": [
+                [5, 10, 25],
+                [5, 10, 25]
+            ]
+        });
+
+
+    });
+</script>
+
+
 </body>
 
 </html>

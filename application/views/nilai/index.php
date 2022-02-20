@@ -21,7 +21,7 @@
 
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="dataTabl" class="display table table-striped table-hover" cellspacing="0" width="100%">
+                                <table id="base_4" class="display table table-striped table-hover" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Kode Alternatif</th>
@@ -98,9 +98,8 @@
                     <i class="flaticon-settings"></i>
                 </div>
             </div>
-            <!-- End Custom template -->
-
         </div>
+             <!-- End Custom template -->
     </div>
 </div>
 <div class=" modal fade" id="HapusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

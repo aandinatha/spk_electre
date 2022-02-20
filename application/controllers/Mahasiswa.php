@@ -24,7 +24,7 @@ class Mahasiswa extends CI_Controller
     }
     public function add()
     {
-        $data['title'] = 'Tambah Mahasiswa';
+        $data['title'] = 'Data Mahasiswa';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 
@@ -44,7 +44,7 @@ class Mahasiswa extends CI_Controller
     }
     public function edit($id = null)
     {
-        $data['title'] = 'Edit Mahasiswa';
+        $data['title'] = 'Data Mahasiswa';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 
@@ -75,7 +75,7 @@ class Mahasiswa extends CI_Controller
 
     public function detail($id)
     {
-        $data['title'] = 'Detail Mahasiswa';
+        $data['title'] = 'Data Mahasiswa';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 

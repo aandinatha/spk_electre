@@ -13,15 +13,15 @@
                 <div class="col-12">
 
                     <div class="card shadow mb-4" id="tb1">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Perbandingan Berpasangan (X)</h6>
+                        <div class="card-header ">
+                            <h3>Membentuk Perbandingan Berpasangan (X)</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="dataTable " class="display table table-striped table-hover" width="100%">
+                                <table id="base_1" class="display table table-striped table-hover" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Kecamatan</th>
+                                            <th>alternatif</th>
                                             <?php foreach ($electre->kriteria as $key => $val) : ?>
                                                 <th><?= $krt[$key]['nama_kriteria'] ?></th>
                                             <?php endforeach ?>
@@ -45,15 +45,26 @@
                     <!-- Perbandingan Berpasangan Ternormalisasi (R) -->
 
                     <div class="card shadow mb-4" id="tb2">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Perbandingan Berpasangan Ternormalisasi (R)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Perbandingan Berpasangan Ternormalisasi (R)</h3>
+                            <br>
+                            <button class="btn btn-primary mb-3" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse1">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/1.png" alt="Card image" overflow="hidden" width="40%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="dataTable" class="display table table-striped table-hover" width="100%">
+                                <table id="base_2" class="display table table-striped table-hover" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Kecamatan</th>
+                                            <th>alternatif</th>
                                             <?php foreach ($electre->kriteria as $key => $val) : ?>
                                                 <th><?= $krt[$key]['nama_kriteria'] ?></th>
                                             <?php endforeach ?>
@@ -78,11 +89,11 @@
 
                     <div class="card shadow mb-4" id="tb3">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Menentukan Bobot tiap-tiap Kriteria (W)</h6>
+                            <h3 class="">Menentukan Bobot tiap-tiap Kriteria (W)</h3>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive-lg">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                            <div class="table-responsive">
+                                <table class="display table table-striped table-hover" id="base_3" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Kriteria</th>
@@ -109,12 +120,23 @@
                     <!-- Membentuk Matrik Preferensi (V) -->
 
                     <div class="card shadow mb-4" id="tb4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Matrik Preferensi (V)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Membentuk Matrik Preferensi (V)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse2">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/2.png" alt="Card image" overflow="hidden" width="40%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table id="base_4" class="display table table-striped table-hover" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -144,12 +166,23 @@
                     <!-- Menentukan Concordance Index (Ckl) -->
 
                     <div class="card shadow mb-4" id="tb5">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Menentukan Concordance Index (Ckl)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Menentukan Concordance Index (Ckl)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse3">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/3.png" alt="Card image" overflow="hidden" width="40%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table id="table_1" class="display table table-striped table-hover" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -179,12 +212,23 @@
                     <!-- Menentukan Discordance Index (Dkl) -->
 
                     <div class="card shadow mb-4" id="tb6">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Menentukan Discordance Index (Dkl)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Menentukan Discordance Index (Dkl)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse4">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/4.png" alt="Card image" overflow="hidden" width="40%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table class="display table table-striped table-hover" id="table_2" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -214,12 +258,23 @@
                     <!-- Membentuk Matriks Concordance (C) -->
 
                     <div class="card shadow mb-4" id="tb7">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Matriks Concordance (C)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Membentuk Matriks Concordance (C)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse5">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/5.png" alt="Card image" overflow="hidden" width="30%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table class="display table table-striped table-hover" id="table_3" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -250,12 +305,23 @@
                     <!-- Membentuk Matriks Discordance (D) -->
 
                     <div class="card shadow mb-4" id="tb8">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Matriks Discordance (D)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Membentuk Matriks Discordance (D)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse6">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/6.png" alt="Card image" overflow="hidden" width="30%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table class="display table table-striped table-hover" id="table_4" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -286,12 +352,24 @@
                     <!-- Membentuk Matrik Concordance Dominan(F) -->
 
                     <div class="card shadow mb-4" id="tb9">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Matrik Concordance Dominan(F)</h6>
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Membentuk Matrik Concordance Dominan(F)</h3>
+                            <br>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse7">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/7.png" alt="Card image" overflow="hidden" width="30%" height="auto">
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="display table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table class="display table table-striped table-hover" id="table_5" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -321,13 +399,24 @@
 
                     <!-- Membentuk Matrik Discordance Dominan(G) -->
 
-                    <div class="card shadow mb-4" id="tb10">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Membentuk Matrik Discordance Dominan(G)</h6>
+                    <div class="card shadow mb-4" id="tb19">
+
+                        <div class="card-header">
+                            <br>
+                            <h3>Membentuk Matrik Discordance Dominan(G)</h3>
+                            <br>
+                            <button class="btn btn-primary mb-3" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseExample">
+                                Keterangan
+                            </button>
+                            <div class="collapse" id="collapse8">
+                                <div class="card card-body">
+                                    <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/8.png" alt="Card image" overflow="hidden" width="30%" height="auto">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <table id="table_6" class="display table table-striped table-hover" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Alternatif</th>
@@ -361,11 +450,13 @@
                     <div class="card" id="tb10">
                         <div class="card-header">
                             <br>
-                            <h1>Agregat Matriks E</h1>
+                            <h3>Agregat Matriks E</h3>
                             <br>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
+
+                            <button class="btn btn-primary mb-3" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
                                 Keterangan
                             </button>
+
                             <div class="collapse" id="collapse9">
                                 <div class="card card-body">
                                     <img class="img img-fluid" src="<?= base_url('assets'); ?>/img/electre/9.png" alt="Card image" overflow="hidden" width="20%" height="auto">

@@ -30,7 +30,7 @@ class Alternatif extends CI_Controller
 
     public function createAlternatif()
     {
-        $data['title'] = 'Penilaian Mahasiswa';
+        $data['title'] = 'Data Nilai';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
 
@@ -45,7 +45,7 @@ class Alternatif extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data Berhasil Ditambahkan  </div>');
             redirect('Nilai');
         } elseif ($this->input->post('back')) {
-            redirect(base_url('alternatif'));
+            redirect(base_url('Nilai'));
         } else {
             $data["form"] = $this->alternatif->getListForm();
             $data["mahasiswa"] = $this->mahasiswa->getAll();
